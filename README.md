@@ -1,2 +1,2 @@
 # leetcode-challenge
-My answers to Leecode Questions
+My answers to Leecode Questions.
