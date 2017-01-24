@@ -6,7 +6,7 @@ var Logger = function() {
      * messages = { message: timestamp, ... }
      */
     this.messages = {};
-    this.TIME_THRESHOLD = 10
+    this.TIME_THRESHOLD = 10;
 };
 
 /**
@@ -33,7 +33,7 @@ Logger.prototype.shouldPrintMessage = function(timestamp, message) {
             return true;
         }
     
-    return false
+    return false;
 };
 
 /** 
