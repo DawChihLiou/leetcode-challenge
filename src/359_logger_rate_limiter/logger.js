@@ -19,7 +19,8 @@ var Logger = function() {
  */
 Logger.prototype.shouldPrintMessage = function(timestamp, message) {
     if ( !this.messages.hasOwnProperty(message) ) {
-            this.messages[message] = timestamp;
+	    // add to map & return true
+	    this.messages[message] = timestamp;
             return true;
         }
         
@@ -27,6 +28,7 @@ Logger.prototype.shouldPrintMessage = function(timestamp, message) {
             this.messages.hasOwnProperty(message) && 
             timestamp - this.messages[message] >= this.TIME_THRESHOLD
         ) {
+	    // update map & return true
             this.messages[message] = timestamp;
             return true;
         }
