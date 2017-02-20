@@ -14,6 +14,25 @@
  *  string convert(string text, int nRows);
  *  convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR"
  *
+ * Examples:
+ *  1. convert('ABCDEF', 2) returns 'ACEBDF'
+ *
+ *    A   C   E
+ *	B   D   F
+ *
+ *  2. convert('ABCDEF', 3) returns 'AEBDFC'
+ *
+ *    A	      E
+ *	B   D	F
+ *	  C
+ *
+ *  3. convert('ABCDEF', 4) returns 'ABFCED'
+ *
+ *    A
+ *	B	F
+ *	  C   E
+ *	    D
+ *
  * @param {string} s
  * @param {number} numRows
  * @return {string}
