@@ -19,6 +19,9 @@
  *  present sum of prices from the 2nd row. i.e, the costs[1][0] represent 
  *  minimum price to paint the second house red plus the 1st house."
  *
+ * Test cass: 
+ *  [[20,18,4],[9,9,10]]
+ *
  * @param {number[][]} costs
  * @return {number}
  */
