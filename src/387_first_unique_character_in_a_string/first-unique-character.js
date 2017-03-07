@@ -19,19 +19,19 @@
  * @return {number}
  */
 var firstUniqChar = function(s) {
-    const occurances = [];
+    const occurrences = [];
     const charCodeBase = 'a'.charCodeAt(0)
     
     // collect character occurances
     for (let i = 0; i < s.length; i++) {
 	let position = s.charCodeAt(i) - charCodeBase;
-        if (!occurances[position]) occurances[position] = 1
-        else occurances[position]++;
+        if (!occurrences[position]) occurrences[position] = 1
+        else occurrences[position]++;
     
     }
     // find the first unique character
     for (let i = 0; i < s.length; i++)
-        if (occurances[s.charCodeAt(i) - charCodeBase] === 1) return i;
+        if (occurrences[s.charCodeAt(i) - charCodeBase] === 1) return i;
     
     return -1;
 };
