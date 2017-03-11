@@ -9,11 +9,7 @@
  * @return {number}
  */
 var majorityElement = function(nums) {
-    const n = nums.length;
-
-    return nums.reduce((counts, num) => {
-	if (!counts[num]) counts[num] = 1;
-	    else counts[num]++;
-            return counts;
-    }, []).findIndex(num => num > n/2);
+    // sort the array and the middle if the majority element
+    nums.sort((a,b) => a - b);
+    return nums[Math.floor(nums.length/2)];
 };
