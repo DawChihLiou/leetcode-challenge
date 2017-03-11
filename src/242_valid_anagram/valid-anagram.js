@@ -17,5 +17,6 @@
  * @return {boolean}
  */
 var isAnagram = function(s, t) {
+    // anagram contains the same set of characters
     return s.split('').sort().join('') === t.split('').sort().join('');
 };
