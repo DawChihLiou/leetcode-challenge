@@ -33,15 +33,16 @@
 var magicalString = function(n) {
     /*
      * take the first three characters of magic string and arrange them into 
-     * groups and occurrences
+     * magic groups and occurrences
      */
     let magic = ['1', '22'];
     let occurrences = [1, 2, 2];
     let i = 0;
-    
+   
     /*
-     * assign next magic substring in group based maching occurrences and 
-     * assign add occurrences based on the magic substring. 
+     * the idea is to produce the next magic substring and keep the magic groups and
+     * occurrences array in sync by assigning next magic substring in group based on 
+     * matching occurrences and adding occurrences based on the magic substring.
      */
     while (occurrences.length < n) {
 	if (!magic[i]) {
