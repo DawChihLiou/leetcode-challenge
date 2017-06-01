@@ -30,10 +30,8 @@
  * @return {number}
  */
 var findLUSlength = function(a, b) {
-    // the string themselve are the longest uncommon subsequence
-    if (a.length !== b.length) return Math.max(a.length, b.length);
-    
     // identical strings doesn't have the uncommon subsequence
     if (a === b) return -1;
-    else return a.length;
+    // the string themselve are the longest uncommon subsequence
+    else return Math.max(a.length, b.length);
 };
