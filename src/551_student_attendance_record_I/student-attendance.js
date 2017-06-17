@@ -23,5 +23,6 @@
  * @return {boolean}
  */
 var checkRecord = function(s) {
+    // check if there are more than 2 As and 3 continuous Ls
     return !/^.*(A.*A|L{3,}).*$/.test(s);
 };
